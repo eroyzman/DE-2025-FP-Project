@@ -42,19 +42,10 @@ Correlation (table that will store data when news affects stock price, should ha
 
 Proposed seed data: There’s only a need to fill in the “Companies” table; the API requests will fill out the rest of the tables. So I think the “Companies” table should be filled with:
 
-
-
-ID
-NAME
-TICKER
-1
-Apple
-APPL
-2
-Microsoft
-MSFT
-
-
+| ID | NAME      | TICKER |
+| -- | --------- | ------ |
+| 1  | Apple     | APPL   |
+| 2  | Microsoft | MSFT   |
 
 1. Data Collection Layer
 Cron job responsible for fetching stock prices and financial news, that runs on specified schedule. For example, once per 10 minutes. Use `yahoo_fin` package or any similar one to obtain financial data
